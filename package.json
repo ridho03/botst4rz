@@ -1,5 +1,5 @@
 {
-  "name": "st4rzbot",
+  "name": "RIDHOBOT",
   "version": "1.0.0",
   "description": "bot whatsapp lewat hp doang",
   "main": "index.js",
@@ -29,15 +29,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Bintang73/botst4rz.git"
+    "url": "git+https://github.com/ridho03/botst4rz.git"
   },
   "keywords": [
     "k"
   ],
-  "author": "Abdul Muttaqin",
+  "author": "ridho setiawan",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Bintang73/botst4rz/issues"
+    "url": "https://github.com/ridho03/botst4rz/issues"
   },
-  "homepage": "https://github.com/Bintang73/botst4rz#readme"
+  "homepage": "https://github.com/ridho03/botst4rz#readme"
 }
