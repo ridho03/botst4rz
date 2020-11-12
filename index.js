@@ -16,8 +16,8 @@ const BotName = 'RIDHO BOT'; // Nama Bot Whatsapp
 const instagramlu = 'https://instagram.com/ridho_setiawan02'; // Nama Instagramlu cok
 const whatsapplu = '081289096745'; // Nomor whatsapplu cok
 const kapanbotaktif = '24 Jam'; // Kapan bot lu aktif
-const grupch1 = 'https://chat.whatsapp.com/FsAlnxqz6y2BhCQi5'; // OFFICIAL GRUP LU 1
-const grupch2 = 'https://chat.whatsapp.com/KLW3UlFfe5zRfCz'; // OFFICIAL GRUP LU 2
+const grupch1 = 'https://chat.whatsapp.com/LX1nAiZUuB5FmTCMwe0o4g'; // OFFICIAL GRUP LU 1
+const grupch2 = 'TIDAK ADA'; // OFFICIAL GRUP LU 2
 //
 const
 {
@@ -125,7 +125,7 @@ conn.sendMessage(id, teks, MessageType.text)
 if (text.includes("#nulis")){
   const teks = text.replace(/#nulis /, "")
 axios.get(`https://st4rz.herokuapp.com/api/nulis?text=${teks}`).then((res) => {
-    let hasil = `Download sendiri ya hasilnya dibawah, soalnya kalo dikirim langsung hasilnya blur\n\n${res.data.result.data}`;
+    let hasil = `jika tidak ada hasil bot menu ini eror\n\n${res.data.result.data}`;
     conn.sendMessage(id, hasil ,MessageType.text);
 })
 }
@@ -133,7 +133,7 @@ axios.get(`https://st4rz.herokuapp.com/api/nulis?text=${teks}`).then((res) => {
 if (text.includes("#ytmp3")){
 const teks = text.replace(/#ytmp3 /, "")
 axios.get(`http://scrap.terhambar.com/yt?link=${teks}`).then((res) => {
-    let hasil = `Download sendiri melalui link dibawah ya, takut servernya down xixi..\n\nSize: ${res.data.filesize}\n\nLink: ${res.data.linkAudioOnly}`;
+    let hasil = `Download sendiri melalui link dibawah ya, kalau link tersedia bot eror..\n\nSize: ${res.data.filesize}\n\nLink: ${res.data.linkAudioOnly}`;
     conn.sendMessage(id, hasil ,MessageType.text);
 })
 }
@@ -141,7 +141,7 @@ axios.get(`http://scrap.terhambar.com/yt?link=${teks}`).then((res) => {
 if (text.includes("#yt")){
 const teks = text.replace(/#yt /, "")
 axios.get(`http://scrap.terhambar.com/yt?link=${teks}`).then((res) => {
-    let hasil = `Download sendiri melalui link dibawah ya, takut servernya down xixi..\n\nSize: ${res.data.filesize}\n\nLink: ${res.data.linkVideo}`;
+    let hasil = `Download sendiri melalui link dibawah ya, kalau link tersedia bot eror..\n\nSize: ${res.data.filesize}\n\nLink: ${res.data.linkVideo}`;
     conn.sendMessage(id, hasil ,MessageType.text);
 })
 }
@@ -149,7 +149,7 @@ axios.get(`http://scrap.terhambar.com/yt?link=${teks}`).then((res) => {
 if (text.includes("#fb")){
 const teks = text.replace(/#fb /, "")
 axios.get(`https://mhankbarbar.herokuapp.com/api/epbe?url=${teks}&apiKey=zFuV88pxcIiCWuYlwg57`).then((res) => {
-    let hasil = `Download sendiri melalui link dibawah ya, takut servernya down xixi..\n\nJudul: ${res.data.title}\n\nSize: ${res.data.filesize}\n\nLink: ${res.data.result}`;
+    let hasil = `Download sendiri melalui link dibawah ya, kalau link tersedia bot eror..\n\nJudul: ${res.data.title}\n\nSize: ${res.data.filesize}\n\nLink: ${res.data.result}`;
     conn.sendMessage(id, hasil ,MessageType.text);
 })
 }
@@ -157,7 +157,7 @@ axios.get(`https://mhankbarbar.herokuapp.com/api/epbe?url=${teks}&apiKey=zFuV88p
 if (text.includes("#ig")){
 const teks = text.replace(/#ig /, "")
 axios.get(`https://st4rz.herokuapp.com/api/ig?url=${teks}`).then((res) => {
-    let hasil = `Download sendiri melalui link dibawah ya, takut servernya down xixi..\n\nLink: ${res.data.result}`;
+    let hasil = `Download sendiri melalui link dibawah ya, kalau link tersedia bot eror..\n\nLink: ${res.data.result}`;
     conn.sendMessage(id, hasil ,MessageType.text);
 })
 }
@@ -165,7 +165,7 @@ axios.get(`https://st4rz.herokuapp.com/api/ig?url=${teks}`).then((res) => {
 if (text.includes("#twt")){
 const teks = text.replace(/#twt /, "")
 axios.get(`https://mhankbarbar.herokuapp.com/api/twit?url=${teks}&apiKey=zFuV88pxcIiCWuYlwg57`).then((res) => {
-    let hasil = `Download sendiri melalui link dibawah ya, takut servernya down xixi..\n\nJudul: ${res.data.title}\n\nSize: ${res.data.filesize}\n\nLink: ${res.data.result}`;
+    let hasil = `Download sendiri melalui link dibawah ya, kalau link tersedia bot eror..\n\nJudul: ${res.data.title}\n\nSize: ${res.data.filesize}\n\nLink: ${res.data.result}`;
     conn.sendMessage(id, hasil ,MessageType.text);
 })
 }
@@ -291,28 +291,28 @@ else if (text == 'euy'){
 conn.sendMessage(id, 'Ya?, ada yang bisa saya bantu? kalo bingung ketik #help ya say..' ,MessageType.text);
 }
 else if (text == 'makasi'){
-conn.sendMessage(id, 'Sama sama, semoga harimu menyenangkan :)' ,MessageType.text);
+conn.sendMessage(id, 'Sama sama, semoga harimu menyenangkan by ridho :)' ,MessageType.text);
 }
 else if (text == 'Makasi'){
-conn.sendMessage(id, 'Sama sama, semoga harimu menyenangkan :)' ,MessageType.text);
+conn.sendMessage(id, 'Sama sama, semoga harimu menyenangkan by ridho :)' ,MessageType.text);
 }
 else if (text == 'makasih'){
-conn.sendMessage(id, 'Sama sama, semoga harimu menyenangkan :)' ,MessageType.text);
+conn.sendMessage(id, 'Sama sama, semoga harimu menyenangkan by ridho :)' ,MessageType.text);
 }
 else if (text == 'Makasih'){
-conn.sendMessage(id, 'Sama sama, semoga harimu menyenangkan :)' ,MessageType.text);
+conn.sendMessage(id, ':Sama sama, semoga harimu menyenangkan by ridho :)' ,MessageType.text);
 }
 else if (text == 'thank'){
-conn.sendMessage(id, 'Sama sama, semoga harimu menyenangkan :)' ,MessageType.text);
+conn.sendMessage(id, 'Sama sama, semoga harimu menyenangkan by ridho :)' ,MessageType.text);
 }
 else if (text == 'Thank'){
-conn.sendMessage(id, 'Sama sama, semoga harimu menyenangkan :)' ,MessageType.text);
+conn.sendMessage(id, 'Sama sama, semoga harimu menyenangkan by ridho :)' ,MessageType.text);
 }
 else if (text == 'thanks'){
-conn.sendMessage(id, 'Sama sama, semoga harimu menyenangkan :)' ,MessageType.text);
+conn.sendMessage(id, 'Sama sama, semoga harimu menyenangkan by ridho :)' ,MessageType.text);
 }
 else if (text == 'Thanks'){
-conn.sendMessage(id, 'Sama sama, semoga harimu menyenangkan :)' ,MessageType.text);
+conn.sendMessage(id, 'Sama sama, semoga harimu menyenangkan by ridho :)' ,MessageType.text);
 }
 else if (text == '#donate'){
 const corohelp = await get.get('https://covid19.mathdro.id/api/countries/id').json()
@@ -561,7 +561,7 @@ conn.sendMessage(id, 'kirim #ptl cewek/cowok\n\nContoh: #ptl cewek' ,MessageType
       {
          if (info.length_seconds > 1000)
          {
-            conn.sendMessage(id, " videonya kepanjangan", MessageType.text)
+            conn.sendMessage(id, " videonya kepanjangan say", MessageType.text)
          }
          else
          {
