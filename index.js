@@ -801,7 +801,21 @@ conn.sendMessage(id, 'kirim #ptl cewek/cowok\n\nContoh: #ptl cewek' ,MessageType
         )
     
     });
-    }
+    }if (text.includes("#lirik")){
+	const teks = text.split("!lirik")[1]
+	axios.get(`http://scrap.terhambar.com/lirik?word=${teks}`).then ((res) => {
+	 	let hasil = `LIRIK DARI LAGU ${teks} ADALAH\n\n\n ${res.data.result.lirik}`
+	conn.sendMessage(id, hasil, MessageType.text)
+	})
+}
+    
+    if (text.includes("#alay")){
+	const alay = text.split("!alay")[1]
+	axios.get(`https://api.terhambar.com/bpk?kata=${alay}`).then ((res) =>
+		{ let hasil = `${res.data.text}`
+		conn.sendMessage(id, hasil, MessageType.text)
+	})
+}
 else if (text.includes("#nama ")) 
   {
     const cheerio = require('cheerio');
